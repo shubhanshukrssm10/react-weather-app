@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{background: url(../noaa-kcvlb727mn8-unsplash.jpg) no-repeat; background-size: cover; font-family: Arial, Helvetica, sans-serif;}
+
+a{text-decoration: none;}
+ul{list-style: none;}
+img{vertical-align: middle; max-width: 100%;}
+button{cursor: pointer;}
+:disabled{cursor: not-allowed;}
+
+@font-face {
+    font-family: head;
+    src: url(./assets/fonts/OpenSans-Bold.ttf);
+}
+
+.container{max-width: 1200px; margin: auto; padding: 0 15px;}
+.row{margin: 0 -15px; display: flex; flex-flow: row wrap;}
+.row::after{content:""; display: block;}
+
+
+.col1{flex:1 1 8.33%; padding: 0 15px;}
+.col2{flex:1 1 16.66%; padding: 0 15px;}
+.col3{flex:1 1 25%; padding: 0 15px;}
+.col4{flex:1 1 33.33%; padding: 0 15px;}
+.col5{flex:1 1 41.66%; padding: 0 15px;}
+.col6{flex:1 1 50%; padding: 0 15px;}
+.col7{flex:1 1 58.33%; padding: 0 15px;}
+.col8{flex:1 1 66.66%; padding: 0 15px;}
+.col9{flex:1 1 75%; padding: 0 15px;}
+.col10{flex:1 1 83.33%; padding: 0 15px;}
+.col11{flex:1 1 91.66%; padding: 0 15px;}
+.col12{flex:1 1 100%; padding: 0 15px;} 
+
+.wrap1{border-bottom: 5px solid #fff;}
+.wrap1 img{width: 80px; height: auto;  margin-bottom: 20px;}
+.wrap1 span{padding-left: 15px;}
+.wrap1 h1{color: #fff; text-align: left; font-family: head;  margin-top: 3%; font-size: 40px;}
+.wrap1 .clock{display: block; margin: 10% 0 0 0; text-align: end;  }
+.wrap1 .fs{font-style: 50px; color: #fff; font-family: head;}
+
+
+.wrap2 .inp{display: flex; justify-content: center; margin-top: 7%;}
+.wrap2 input{padding:5px 0px 5px 15px; width: 50%; border-radius: 50px; border: 1px transparent; outline: none; color: #000; font-size: 20px;}
+.wrap2 button{padding:15px 45px; border-radius: 50px; margin-left: -30% ; background-color:#fff350; border: 1px transparent; font-family: head; font-size: 20px; color: #91908F;} 
+.wrap2 .box{width: 600px; border:2px solid #00000070; display:block; margin: 5% auto; background: url(./assets/jordan-mcqueen-DxVjWNcd1WI-unsplash.jpg) no-repeat center; padding: 2%; background-size: cover; box-shadow: 3px 3px 5px #000000b6;}
+
+/* .wrap2 .box:hover{transform: scale(1.1);transition-duration: 1.5s;} */
+
+.wrap2 .img{background-color: #566c90be; padding: 0; border-radius: 50%; display: block; margin: 5% auto;}
+.wrap2 h1{color: #000; font-family: head; text-align: center; font-size: 40px;}
+.wrap2 h2{color: #fff; text-align: center; font-size: 30px; margin-top: 2%;}
+.wrap2 h3{color: #000;text-align: center; font-size: 25px;}
+.wrap2 h4{color: #fff;text-align: center; font-size: 25px;  margin-top: 5%; font-weight: 500;}
+.wrap2 .del{font-size: 25px; margin: 7px;}
+.wrap2 .del:hover{animation: spin 1.5s linear .1s forwards;}
+@keyframes spin {
+    0%{
+        transform: rotate(7200deg);
+    }
+    
+}
+
+.wrap3{background-color: #000000b6; position:fixed; bottom: 0; left: 0; right: 0;}
+.wrap3 p{color: #fff; font-family: head; text-align: center; margin: 5px 0; }
+.wrap3 a{color: #fff; font-family: head; }
+
+
+
+
+
+@media screen and (max-width: 1200px){ 
+    .container {width: 960px}
+    body{background: url(../noaa-kcvlb727mn8-unsplash.jpg) repeat; background-size: cover;}
+
+}
+@media screen and (max-width: 980px){ 
+    .container {width: 760px}
+    body{background: url(../noaa-kcvlb727mn8-unsplash.jpg) repeat; background-size: cover;}
+    .wrap1 h1{font-size: 30px;}
+    .wrap2 input{padding:15px 0px 15px 20px; width: 80%; margin: auto;}
+    .wrap2 .inp{display: flex; justify-content: center; margin-top: 7%;}
+    .wrap2 input{padding:15px 0px 15px 20px; width: 70%; margin: auto;}
+    .wrap2 button{padding:13px 45px; border-radius: 50px; margin-left: -48% ;} 
+}
+@media screen and (max-width: 770px){ 
+    .container {width: 100%}
+    body{background: url(../noaa-kcvlb727mn8-unsplash.jpg) repeat; background-size: cover;}
+    .wrap1 h1{font-size: 20px;}
+    .wrap1 img{width: 60px; height: auto; }
+
+    .wrap2 .inp{display: flex; justify-content: center; margin-top: 7%;}
+    .wrap2 input{padding:15px 0px 15px 20px; width: 70%; display: block; margin: auto; font-size: 18px;}
+    .wrap2 button{padding:12px 45px; border-radius: 50px; margin: auto auto auto -48% ;} 
+
+    .wrap2 .box{width: auto;}
+    .wrap2 h2{font-size: 25px;}
+    .wrap2 h3{font-size: 18px;}
+    .wrap2 h4{font-size: 18px; }
+
+  
+}
+@media screen and (max-width: 503px){ 
+    .container {width: 100%}
+    body{background: url(../noaa-kcvlb727mn8-unsplash.jpg) repeat; background-size: cover;}
+    .col-mb-12{flex:1 1 100%; padding: 0 15px;} 
+    .wrap1 h1{text-align: center; }
+    .wrap1 .clock{margin: 3% 0 0 0;}
+    .wrap1 .mb{margin-bottom: 20px;}
+    .wrap2 .inp{display: flex; justify-content: center; flex-direction: column; margin-top: 10%;}
+    .wrap2 input{padding:10px 0px 10px 20px; width: 90%; margin: auto; font-size: 16px;}
+    .wrap2 button{padding:10px 35px; border-radius: 50px; display: block; margin: 3% auto; font-size: 16px;} 
+    .wrap2 .box{width: auto;}
+    .wrap2 .a{display: block;}
+    .wrap2 h2{color: #000;}
+
+    .wrap3 p{font-size: 14px; }
+}
