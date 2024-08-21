@@ -4,7 +4,7 @@
 
 }
 
-body{background: url(./assets/thunderstorm-countryside.jpg) no-repeat; background-size: cover; font-family: Arial, Helvetica, sans-serif;}
+body{background: url(./assets/thunderstorm-countryside.webp) no-repeat; background-size: cover; font-family: Arial, Helvetica, sans-serif;}
 
 a{text-decoration: none;}
 ul{list-style: none;}
@@ -74,12 +74,12 @@ button{cursor: pointer;}
 
 @media screen and (max-width: 1200px){ 
     .container {width: 960px}
-    body{background: url(./assets/thunderstorm-countryside.jpg) repeat; background-size: cover;}
+    body{background: url(./assets/thunderstorm-countryside.webp) repeat; background-size: cover;}
 
 }
 @media screen and (max-width: 980px){ 
     .container {width: 760px}
-    body{background: url(./assets/thunderstorm-countryside.jpg) repeat; background-size: cover;}
+    body{background: url(./assets/thunderstorm-countryside.webp) repeat; background-size: cover;}
     .wrap1 h1{font-size: 30px;}
     .wrap2 input{padding:15px 0px 15px 20px; width: 80%; margin: auto;}
     .wrap2 .inp{display: flex; justify-content: center; margin-top: 7%;}
@@ -88,7 +88,7 @@ button{cursor: pointer;}
 }
 @media screen and (max-width: 770px){ 
     .container {width: 100%}
-    body{background: url(./assets/thunderstorm-countryside.jpg) repeat; background-size: cover;}
+    body{background: url(./assets/thunderstorm-countryside.webp) repeat; background-size: cover;}
     .wrap1 h1{font-size: 20px;}
     .wrap1 img{width: 60px; height: auto; }
 
@@ -105,7 +105,7 @@ button{cursor: pointer;}
 }
 @media screen and (max-width: 503px){ 
     .container {width: 100%}
-    body{background: url(./assets/thunderstorm-countryside.jpg) repeat; background-size: cover;}
+    body{background: url(./assets/thunderstorm-countryside.webp) repeat; background-size: cover;}
     .col-mb-12{flex:1 1 100%; padding: 0 15px;} 
     .wrap1 h1{text-align: center; }
     .wrap1 .clock{margin: 3% 0 0 0;}
